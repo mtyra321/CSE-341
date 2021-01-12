@@ -1,0 +1,23 @@
+#div1 {
+    background-color: blue;
+    font-size: 40px;
+    color: white;
+}
+
+#div2 {
+    background-color: rgb(43, 255, 0);
+    font-size: 40px;
+    color: white;
+}
+
+#div3 {
+    background-color: rgb(255, 0, 179);
+    font-size: 40px;
+    color: white;
+}
+
+#div1:hover,
+#div2:hover,
+#div3:hover {
+    font-weight: bold;
+}
