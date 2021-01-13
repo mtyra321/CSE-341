@@ -1,0 +1,35 @@
+.topbar {
+    overflow: hidden;
+    background-color: rgb(212, 39, 30);
+}
+
+.topbar a {
+    float: left;
+    font-family: 'Calibri';
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 17px;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+a {
+    text-align: center;
+}
+
+li {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.some {
+    text-align: center;
+}
+
+.topbar a:hover {
+    background-color: rgb(212, 100, 100);
+}
