@@ -35,3 +35,63 @@ h1 {
 .topbar a:hover {
     background-color: rgb(212, 100, 100);
 }
+
+.grid-container {
+    display: grid;
+    grid-gap: 10px;
+    background-color: rgb(79, 92, 102);
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(108, 139, 120, 0.75);
+    text-align: center;
+    /* padding: 20px; */
+}
+
+#start {
+    background-color: rgb(255, 60, 0);
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    font-size: 30px;
+}
+
+#name {
+    color: rgb(255, 94, 0);
+    font-size: 30px;
+}
+
+#class {
+    color: rgb(255, 94, 0);
+    font-size: 30px;
+}
+
+.name {
+    padding: 3px;
+    grid-column: 1/ span 4;
+    grid-row: 1;
+}
+
+.class {
+    grid-column: 1/span 4;
+    grid-row: 2;
+}
+
+.game {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}
+
+.about_me {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+}
+
+#about_me {
+    border: 1px;
+    border: solid;
+    background-color: #d6cdcd;
+    font-size: 30px;
+}
