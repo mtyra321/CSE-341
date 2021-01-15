@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matt Tyra's about me</title>
     <link rel="stylesheet" type="text/css" href="home_page.css">
+    <script src="about_me.js"></script>
 </head>
 
-<body onload="poplist()">
+<body>
     <div class="topbar">
         <a href="./home_page.html">Home</a>
         <a href="./assignments.html">Assignments</a>
@@ -20,28 +21,65 @@
 </body>
 
 
+<div class="slideshow-container">
 
+    <div class="mySlides fade">
+        <img src="crazanity.jpg" alt="College University photos" style="width:100%" class="slideshow-pics">
+    </div>
 
+    <div class="mySlides fade">
+        <img src="elk.jpg" alt="College University photos" style="width:100%" class="slideshow-pics">
+    </div>
 
-<p style="text-align:center">My name is Matt Tyra</p>
-<p style="text-align:center">I am from Southern California</p>
-<p style="text-align:center">I am a Software Engineering major</p>
-<p style="text-align:center">I like theme parks, technology, nature, and marvel</p>
-<a href="https://www.sixflags.com/magicmountain">
-    <img src="magicmountain.jpg" alt="magic mountain" class="center" width=600 height=600>
+    <div class="mySlides fade">
+        <img src="yellowstone.jpg" alt="College University photos" style="width:100%" class="slideshow-pics">
+    </div>
+    <div class="mySlides fade">
+        <img src="capiron.jpg" alt="College University photos" style="width:100%" class="slideshow-pics">
+    </div>
+    <div class="mySlides fade">
+        <img src="magicmountain.jpg" alt="College University photos" style="width:100%" class="slideshow-pics">
+    </div>
 
-</a>
+</div>
+<div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
 
-<img src="capiron.jpg" alt="Captain America Iron man fighting" class="center" width=600 height=400>
+</div>
+<script>
+    var slideIndex = 0;
+    showSlides();
 
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 3500); // Change image every 2 seconds
+    }
+</script>
 
-
-
+<p>My name is Matt Tyra</p>
+<p>I am from Southern California</p>
+<p>I am a Software Engineering major</p>
+<p>I like theme parks, technology, nature, and marvel</p>
 <br>
 <br>
-<p style="text-align:center"><b>My favorite quote currently:</b></p>
-<blockquote>The strong man who has known power all his life, may lose respect for that power, but a weak man knows the value of strength, and knows compassion<i> -Dr. Abhraham Erskine</i></blockquote>
-
 
 
 
