@@ -1,5 +1,7 @@
 
-
 <?php
-echo "<p>Copyright &copy; 1999-" . date("Y") . " W3Schools.com</p>";
+echo "Today is " . date("l");
+echo ", " . date("m-d-Y") . "<br>";
+date_default_timezone_set("America/Denver");
+echo date("h:i:sa");
 ?>

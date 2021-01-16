@@ -11,9 +11,9 @@
 
 <body>
     <div class="topbar">
-        <a href="./home_page.html">Home</a>
-        <a href="./assignments.html">Assignments</a>
-        <a href="./about_me.html">About me</a>
+        <a href="./home_page.php">Home</a>
+        <a href="./assignments.php">Assignments</a>
+        <a href="./about_me.php">About me</a>
     </div>
     <h1>About Me</h1>
 
@@ -80,7 +80,7 @@
 <p>I like theme parks, technology, nature, and marvel</p>
 <br>
 <br>
-<?php include 'home_page.php';?>
+<?php include 'home.php';?>
 
 
 

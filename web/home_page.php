@@ -8,11 +8,11 @@
     <link rel="stylesheet" type="text/css" href="home_page.css">
 </head>
 
-<body>
+<body> 
     <div class="topbar">
-        <a href="./home_page.html">Home</a>
-        <a href="./assignments.html">Assignments</a>
-        <a href="./about_me.html">About me</a>
+    <a href="./home_page.php">Home</a>
+        <a href="./assignments.php">Assignments</a>
+        <a href="./about_me.php">About me</a>
     </div>
 
     <div class="grid-container">

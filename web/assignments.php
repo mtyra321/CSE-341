@@ -11,9 +11,9 @@
 
 <body onload="poplist()">
     <div class="topbar">
-        <a href="./home_page.html">Home</a>
-        <a href="./assignments.html">Assignments</a>
-        <a href="./about_me.html">About me</a>
+    <a href="./home_page.php">Home</a>
+        <a href="./assignments.php">Assignments</a>
+        <a href="./about_me.php">About me</a>
     </div>
     <h1>Assignments</h1>
     <h1>Coming Soon!</h1>
@@ -22,7 +22,7 @@
 
         </ul>
     </p>
-    <?php include "./home_page.php";?>
+    <?php include "./home.php";?>
 
 
 </body>
