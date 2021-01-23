@@ -25,10 +25,10 @@
             <p id="class">Web Backend 2 </p>
         </div>
         <div class="grid-item assignments">
-            <a href="./assignments.html" id="assignments">My Assignments</a>
+            <a href="./assignments.php" id="assignments">My Assignments</a>
         </div>
         <div class="grid-item about_me">
-            <a href="./about_me.html" id="about_me">My About me page</a>
+            <a href="./about_me.php" id="about_me">My About me page</a>
         </div>
     </div>
     <?php include "home.php";?>
