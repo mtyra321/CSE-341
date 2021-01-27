@@ -13,16 +13,16 @@ CREATE TABLE Bathroom (
 );
 
 CREATE TABLE Rating (
-    BathroomID  serial             not null references Bathroom(BathroomID),
     RatingID    serial             not null primary key,
+    BathroomID  serial             not null references Bathroom(BathroomID),
     Name        varchar(255)    not null,
     Description varchar(255),
     Rating      int
 );
 
 CREATE TABLE Tag (
-    BathroomID  serial             not null references Bathroom(BathroomID),
     TagID       serial             not null primary key,
+    BathroomID  serial             not null references Bathroom(BathroomID),
     Name        varchar(255)    not null,
     Description varchar(255)
 );
