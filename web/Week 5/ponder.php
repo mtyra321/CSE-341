@@ -26,7 +26,7 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 	$name = $row['name'];
 	$description = $row['description'];
 	$location = $row['location'];
-	$rating = $row['OverallRating'];
+	$rating = $row['overallrating'];
 
     echo "<p>name: $name</p> <br><p>Description: $description</p><br><p>Location: $location</p><br><p> - Overall rating - $rating</p>";
 }
