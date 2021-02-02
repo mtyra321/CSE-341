@@ -28,3 +28,18 @@ CREATE TABLE Tag (
 );
 
 
+insert into Bathroom(name, Description, Location, OverallRating) 
+values ('Austin 149 Female','the bathroom is nice. It has 3 handicap bathrooms. Pretty clean. However the door entry is hard to see.', 'Byui Austin Building', 4);
+insert into Bathroom(name, Description, Location, OverallRating) 
+values ('Austin 175 Male','single stall with one urinal and a tower sink with lockers. Good for Austin workers and adventures.', 'Byui Austin Building', 3);
+insert into Bathroom(name, Description, Location, OverallRating) 
+values ('Benson 292 Male','large and open, good for not feeling locked in', 'Byui Benson Building', 4);
+insert into Bathroom(name, Description, Location, OverallRating) 
+values ('Biddulph 141 Female','You can shower after you poop', 'Byui Biddulph Building', 3);
+insert into Bathroom(name, Description, Location, OverallRating) 
+values ('Biddulph 152 Female','the bathroom is huge. This big area only has 3 toilets. But a ton of hand wash. What a design.', 'Byui Biddulph Building', 3);
+insert into Bathroom(name, Description, Location, OverallRating) 
+values ('Biddulph 313 male','nice doors on the stalls for nervous poopers. Two urinals. A mirror that looks like a hidden door but is not."', 'Byui Biddulph Building', 4);
+insert into Bathroom(name, Description, Location, OverallRating) 
+values ('Biddulph Basement Unisex','no room number, bottom floor in biddulph.', 'Byui Biddulph Building', 2);
+
