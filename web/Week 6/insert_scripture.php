@@ -30,7 +30,7 @@ $topicIds = $_POST['chkTopics'];
 // we could (and should!) put additional checks here to verify that all this data is actually provided
 
 
-require("dbConnect.php");
+include "../db/dbConnect.php";
 $db = get_db();
 
 try
@@ -77,7 +77,7 @@ catch (Exception $ex)
 }
 
 // finally, redirect them to a new page to actually show the topics
-header("Location: showTopics.php");
+header("Location: show_scripture.php");
 
 die(); // we always include a die after redirects. In this case, there would be no
        // harm if the user got the rest of the page, because there is nothing else
