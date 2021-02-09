@@ -7,7 +7,7 @@
 * from the DB.
 ***********************************************************/
 
-require("dbConnect.php");
+include "../db/dbConnect.php";
 $db = get_db();
 
 ?>

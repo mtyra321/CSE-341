@@ -10,7 +10,7 @@
 
 // The DB connection logic is in another file so it can be included
 // in each of our different PHP files.
-require("dbConnect.php");
+include "../db/dbConnect.php";
 $db = get_db();
 
 ?>
