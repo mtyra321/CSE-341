@@ -38,7 +38,7 @@ try
 	// Add the Scripture
 
 	// We do this by preparing the query with placeholder values
-	$query = 'INSERT INTO Bathroom(building, room, gender, description, overallrating) VALUES(:building, :room, :gender, :description, :overallrating)';
+	$query = 'INSERT INTO bathroom(building, room, gender, description, overallrating) VALUES(:building, :room, :gender, :description, :overallrating)';
 	$statement = $db->prepare($query);
 
 	// Now we bind the values to the placeholders. This does some nice things
