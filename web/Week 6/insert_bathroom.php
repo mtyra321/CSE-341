@@ -22,10 +22,10 @@ $rating = $_POST['rating'];
 // For debugging purposes, you might include some echo statements like this
 // and then not automatically redirect until you have everything working.
 
-// echo "building=$building\n";
-// echo "room=$room\n";
-// echo "gender=$gender\n";
-// echo "description=$description\n";
+echo "building=$building\n";
+echo "room=$room\n";
+echo "gender=$gender\n";
+echo "description=$description\n";
 
 // we could (and should!) put additional checks here to verify that all this data is actually provided
 
@@ -52,7 +52,7 @@ try
 	$statement->execute();
 
 	// get the new id
-	$scriptureId = $db->lastInsertId("scripture_id_seq");
+	//$scriptureId = $db->lastInsertId("scripture_id_seq");
 
 	// Now go through each topic id in the list from the user's checkboxes
 	// foreach ($topicIds as $topicId)
