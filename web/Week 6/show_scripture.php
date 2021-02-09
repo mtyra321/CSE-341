@@ -48,7 +48,7 @@ try
 		echo '<strong>' . $row['book'] . ' ' . $row['chapter'] . ':';
 		echo $row['verse'] . '</strong>' . ' - ' . $row['content'];
 		echo '<br />';
-		echo 'Topics: ';
+		// echo 'Topics: ';
 
 		// get the topics now for this scripture
 		// $stmtTopics = $db->prepare('SELECT name FROM topic t'
