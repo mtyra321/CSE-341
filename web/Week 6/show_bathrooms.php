@@ -14,13 +14,18 @@ $db = get_db();
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Scripture and Topic List</title>
+	<title>Nature Calls Bathroom List</title>
+	<style>
+	table:{
+		border: 1px solid black;
+	}
+	</style>
 </head>
 
 <body>
 <div>
 
-<h1>Scripture and Topic List</h1>
+<h1>Nature Calls Bathroom List</h1>
 
 <?php
 

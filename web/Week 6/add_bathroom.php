@@ -17,13 +17,13 @@ $db = get_db();
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Topic Entry</title>
+	<title>Bathroom Entry</title>
 </head>
 
 <body>
 <div>
 
-<h1>Enter New Scriptures and Topics</h1>
+<h1>Enter New Bathrooms around BYUI campus</h1>
 
 <form id="mainForm" action="insert_bathroom.php" method="POST">
 
@@ -46,6 +46,7 @@ $db = get_db();
     <label for="rating">Rating:</label>
     <br>
     <select id="rating" name="rating">
+    <option value="0">0</option>
     <option value="1">1</option>
     <option value="2">2</option>
     <option value="3">3</option>
