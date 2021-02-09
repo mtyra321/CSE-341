@@ -16,7 +16,7 @@ $db = get_db();
 <head>
 	<title>Nature Calls Bathroom List</title>
 	<style>
-	table:{
+	table, th, td{
 		border: 1px solid black;
 	}
 	</style>
