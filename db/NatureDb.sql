@@ -1,10 +1,10 @@
-Drop table if exists Bathroom;
+Drop table if exists Bathroom cascade;
 Drop table if exists Rating;
 Drop table if exists Tag;
 
 -- Have a rating table and a tag table that both link to the bathroom table through IDs
 CREATE TABLE Bathroom (
-    bathroomID      serial             not null primary key,
+    bathroomID      serial          not null primary key,
     roomnumber      varchar(255)    not null,
     gender          varchar(255)    not null,
     description     varchar(255),
