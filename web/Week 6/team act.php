@@ -60,7 +60,7 @@ try
 	// to only bring back the fields that you need.
 
 	// prepare the statement
-	$statement = $db->prepare('SELECT id, name FROM topic');
+	$statement = $db->prepare('SELECT id, name FROM scripture');
 	$statement->execute();
 
 	// Go through each result
