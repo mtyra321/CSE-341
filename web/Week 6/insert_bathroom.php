@@ -38,13 +38,13 @@ try
 	// Add the Scripture
 
 	// We do this by preparing the query with placeholder values
-	$query = 'INSERT INTO bathroom(building, room, gender, description, overallrating) VALUES(:building, :room, :gender, :description, :overallrating)';
+	$query = 'INSERT INTO bathroom(building, roomnumber, gender, description, overallrating) VALUES(:building, :roomnumber, :gender, :description, :overallrating)';
 	$statement = $db->prepare($query);
 
 	// Now we bind the values to the placeholders. This does some nice things
 	// including sanitizing the input with regard to sql commands.
 	$statement->bindValue(':building', $building);
-	$statement->bindValue(':room', $room);
+	$statement->bindValue(':roomnumber', $room);
 	$statement->bindValue(':gender', $gender);
 	$statement->bindValue(':description', $description);
     $statement->bindValue(':overallrating', $rating);
