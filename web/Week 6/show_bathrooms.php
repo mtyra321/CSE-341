@@ -45,17 +45,17 @@ try
 	// prepare the statement
 	$statement = $db->prepare('SELECT BathroomID, RoomNumber, Gender, description, building, overallrating FROM bathroom');
 	$statement->execute();
+	$bathrooms_list = [];
 
 	// Go through each result
 	echo '<table>';
 	echo '<tr>
-    <th><button onclick = "filter(building)">Building</button></th>
+    <th><button onclick = "filter("building", $bathrooms_list)">Building</button></th>
     <th>Room Number</th>
 	<th>Gender</th>
     <th>Description</th>
     <th>Rating</th>
   	</tr>';
-	$bathrooms_list = [];
 	while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 	{
 		array_push($bathrooms_list, $row);
