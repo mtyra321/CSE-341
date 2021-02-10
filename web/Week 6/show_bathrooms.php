@@ -50,7 +50,7 @@ try
 	// Go through each result
 	echo '<table>';
 	echo '<tr>
-    <th><button onclick = "filter("building", $bathrooms_list)">Building</button></th>
+    <th><button onclick = "filter("building", '.$bathrooms_list.')">Building</button></th>
     <th>Room Number</th>
 	<th>Gender</th>
     <th>Description</th>
