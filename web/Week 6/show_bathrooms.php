@@ -55,8 +55,10 @@ try
     <th>Description</th>
     <th>Rating</th>
   	</tr>';
+	$bathrooms_list = [];
 	while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 	{
+		array_push($bathrooms_list, $row);
 		echo '<tr>';
 		echo '<th>'. $row['building'].'</th>';
 		echo '<th>'. $row['roomnumber'].'</th>';
@@ -83,7 +85,7 @@ try
 		echo '</tr>';
 	}
 echo '</table>';
-
+echo $bathrooms_list;
 
 }
 catch (PDOException $ex)
