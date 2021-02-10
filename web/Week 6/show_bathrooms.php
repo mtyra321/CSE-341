@@ -15,11 +15,6 @@ $db = get_db();
 <html>
 <head>
 	<title>Nature Calls Bathroom List</title>
-	<style>
-	table, th, td{
-		border: 1px solid black;
-	}
-	</style>
 	<script src="bathroom_display.js"></script>
 </head>
 
