@@ -85,6 +85,9 @@ try
 		echo '</tr>';
 	}
 echo '</table>';
+foreach($bathrooms_list as $result) {
+    echo $result['building'], '<br>';
+}
 echo $bathrooms_list;
 
 }
