@@ -20,11 +20,11 @@ $db = get_db();
 		border: 1px solid black;
 	}
 	</style>
+	<script src="bathroom_display.js"></script>
 </head>
 
 <body>
 <div>
-
 <h1>Nature Calls Bathroom List</h1>
 
 <?php
@@ -49,7 +49,7 @@ try
 	// Go through each result
 	echo '<table>';
 	echo '<tr>
-    <th>Building</th>
+    <th><button onclick = "filter(building)">Building</button></th>
     <th>Room Number</th>
 	<th>Gender</th>
     <th>Description</th>
