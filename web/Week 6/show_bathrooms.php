@@ -41,7 +41,7 @@ try
 	while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 	{
 		array_push($bathrooms_list, $row);
-		echo '<div class="flex-item" id="'.$row['bathroomid'].'" onclick = "individual_bathroom('.$row.')">';
+		echo '<div class="flex-item" id="'.$row['bathroomid'].'" onclick = "individual_bathroom('.json_encode($row).')">';
 		echo '<p> '. $row['building']. ' ';
 		echo  $row['roomnumber']. ' ';
 		echo  $row['gender'].'</p>';
