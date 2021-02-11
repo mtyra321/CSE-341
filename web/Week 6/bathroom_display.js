@@ -4,5 +4,6 @@ function filter(type, array) {
 
 
 function individual_bathroom(data) {
-    //console.log(data);
+    var fixed_data = JSON.parse(data);
+    console.log(fixed_data);
 }
