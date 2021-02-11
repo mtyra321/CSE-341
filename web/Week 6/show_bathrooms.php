@@ -95,6 +95,6 @@ catch (PDOException $ex)
 ?>
 
 </div>
-
+<button ><a href = "./add_bathroom.php">Add a Bathroom</a></button>
 </body>
 </html>
