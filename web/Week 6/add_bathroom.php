@@ -27,7 +27,7 @@ $db = get_db();
 
 <form id="mainForm" action="insert_bathroom.php" method="POST">
 
-	<input type="text" id="txtbuilding" name="txtbuilding"></input>
+	<input type="text" id="txtbuilding" name="txtbuilding" ></input>
 	<label for="txtbuilding">Building</label>
 	<br /><br />
 

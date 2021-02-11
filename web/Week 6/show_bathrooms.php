@@ -54,7 +54,7 @@ try
 	while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 	{
 		array_push($bathrooms_list, $row);
-		echo '<tr>';
+		echo '<div><tr>';
 		echo '<th>'. $row['building'].'</th>';
 		echo '<th>'. $row['roomnumber'].'</th>';
 		echo '<th>'. $row['gender'].'</th>';
@@ -77,7 +77,7 @@ try
 		// 	echo $topicRow['name'] . ' ';
 		// }
 
-		echo '</tr>';
+		echo '</tr></div>';
 	}
 echo '</table>';
 foreach($bathrooms_list as $result) {
