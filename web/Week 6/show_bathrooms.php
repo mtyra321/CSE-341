@@ -45,17 +45,12 @@ try
 
 	// Go through each result
 	echo '
-    <p><button onclick = "filter("building", '.$bathrooms_list.')">Building</button></p>
-    <p>Room Number</p>
-	<p>Gender</p>
-    <p>Description</p>
-    <p>Rating</p>
 	<div class = "flex-container">
 	';
 	while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 	{
 		array_push($bathrooms_list, $row);
-		echo '<div class="flex-item" id="'.$row['bathroomid'].'">';
+		echo '<div class="flex-item" id="'.$row['bathroomid'].'" onclick = "individual_bathroom('.$row.')">';
 		echo '<p> '. $row['building']. ' ';
 		echo  $row['roomnumber']. ' ';
 		echo  $row['gender'].'</p>';
