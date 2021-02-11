@@ -4,5 +4,5 @@ function filter(type, array) {
 
 
 function individual_bathroom(data) {
-    console.log(data);
+    //console.log(data);
 }
