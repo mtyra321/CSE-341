@@ -50,15 +50,15 @@ try
 	<p>Gender</p>
     <p>Description</p>
     <p>Rating</p>
-	<div class = "grid-container">
+	<div class = "flex-container">
 	';
 	while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 	{
 		array_push($bathrooms_list, $row);
-		echo '<div class="grid-item" id="'.$row['bathroomid'].'">';
-		echo '<p>'. $row['building'].'</p>';
-		echo '<p>'. $row['roomnumber'].'</p>';
-		echo '<p>'. $row['gender'].'</p>';
+		echo '<div class="flex-item" id="'.$row['bathroomid'].'">';
+		echo '<p>'. $row['building'];
+		echo  $row['roomnumber'];
+		echo  $row['gender'].'</p>';
 		// echo '<p>'. $row['description'].'</p>';
 		echo '<p>'. $row['overallrating'].'</p>';
 

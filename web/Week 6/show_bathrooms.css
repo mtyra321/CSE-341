@@ -1,12 +1,13 @@
-.grid-container {
-    display: grid;
+.flex-container {
+    display: flex;
     grid-gap: 10px;
     background-color: rgb(79, 92, 102);
     padding: 10px;
 }
 
-.grid-item {
+.flex-item {
     background-color: rgba(108, 139, 120, 0.75);
     text-align: center;
+    flex: 1;
     /* padding: 20px; */
 }
