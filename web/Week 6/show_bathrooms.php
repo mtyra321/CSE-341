@@ -78,8 +78,12 @@ catch (PDOException $ex)
 
 ?>
 <script type="text/javascript">
-    var obj = <?php echo json_encode($bathrooms_list); ?>;
+    var the_array = <?php echo json_encode($bathrooms_list); ?>;
 	console.log(obj);
+	function individual_bathroom(id) {
+    var data = the_array[id];
+    console.log(data);
+}
 	</script>
 </div>
 <button ><a href = "./add_bathroom.php">Add a Bathroom</a></button>
