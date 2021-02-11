@@ -43,23 +43,21 @@ try
 	$bathrooms_list = [];
 
 	// Go through each result
-	echo '<table>';
-	echo '<tr>
-    <th><button onclick = "filter("building", '.$bathrooms_list.')">Building</button></th>
-    <th>Room Number</th>
-	<th>Gender</th>
-    <th>Description</th>
-    <th>Rating</th>
-  	</tr>';
+	echo '
+    <p><button onclick = "filter("building", '.$bathrooms_list.')">Building</button></p>
+    <p>Room Number</p>
+	<p>Gender</p>
+    <p>Description</p>
+    <p>Rating</p>';
 	while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 	{
 		array_push($bathrooms_list, $row);
-		echo '<div><tr>';
-		echo '<th>'. $row['building'].'</th>';
-		echo '<th>'. $row['roomnumber'].'</th>';
-		echo '<th>'. $row['gender'].'</th>';
-		echo '<th>'. $row['description'].'</th>';
-		echo '<th>'. $row['overallrating'].'</th>';
+		echo '<div>';
+		echo '<p>'. $row['building'].'</p>';
+		echo '<p>'. $row['roomnumber'].'</p>';
+		echo '<p>'. $row['gender'].'</p>';
+		echo '<p>'. $row['description'].'</p>';
+		echo '<p>'. $row['overallrating'].'</p>';
 
 		// echo 'Topics: ';
 
@@ -77,9 +75,8 @@ try
 		// 	echo $topicRow['name'] . ' ';
 		// }
 
-		echo '</tr></div>';
+		echo '</div>';
 	}
-echo '</table>';
 foreach($bathrooms_list as $result) {
     echo $result['building'], '<br>';
 }
