@@ -16,6 +16,7 @@ $db = get_db();
 <head>
 	<title>Nature Calls Bathroom List</title>
 	<script src="bathroom_display.js"></script>
+	<link rel="stylesheet" type="text/css" href="show_bathrooms.css">
 </head>
 
 <body>
@@ -48,11 +49,13 @@ try
     <p>Room Number</p>
 	<p>Gender</p>
     <p>Description</p>
-    <p>Rating</p>';
+    <p>Rating</p>
+	<div class = "grid-container">
+	';
 	while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 	{
 		array_push($bathrooms_list, $row);
-		echo '<div id="'.$row['bathroomid'].'">';
+		echo '<div class="grid-item" id="'.$row['bathroomid'].'">';
 		echo '<p>'. $row['building'].'</p>';
 		echo '<p>'. $row['roomnumber'].'</p>';
 		echo '<p>'. $row['gender'].'</p>';
@@ -77,7 +80,7 @@ try
 
 		echo '</div>';
 	}
-
+echo '</div>';
 
 }
 catch (PDOException $ex)
