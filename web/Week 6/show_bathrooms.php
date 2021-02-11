@@ -38,6 +38,7 @@ try
 	echo '
 	<div class = "flex-container">
 	';
+	$counter = 0;
 	while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 	{
 		array_push($bathrooms_list, $row);
@@ -66,6 +67,7 @@ try
 		// }
 
 		echo '</div>';
+		$counter++;
 	}
 echo '</div>';
 
@@ -79,7 +81,7 @@ catch (PDOException $ex)
 ?>
 <script type="text/javascript">
     var the_array = <?php echo json_encode($bathrooms_list); ?>;
-	console.log(obj);
+	console.log(the_array);
 	function individual_bathroom(id) {
     var data = the_array[id];
     console.log(data);
