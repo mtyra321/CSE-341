@@ -42,6 +42,7 @@ try
 	{
 		array_push($bathrooms_list, $row);
 		echo '<div class="flex-item" id="'.$row['bathroomid'].'" onclick = "individual_bathroom('.json_encode($row).')">';
+		
 		echo '<p> '. $row['building']. ' ';
 		echo  $row['roomnumber']. ' ';
 		echo  $row['gender'].'</p>';
@@ -76,7 +77,10 @@ catch (PDOException $ex)
 }
 
 ?>
-
+<script type="text/javascript">
+    var obj = <?php echo json_encode($bathrooms_list); ?>;
+	console.log(obj);
+	</script>
 </div>
 <button ><a href = "./add_bathroom.php">Add a Bathroom</a></button>
 </body>
