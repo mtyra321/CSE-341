@@ -9,5 +9,7 @@
     background-color: rgba(108, 139, 120, 0.75);
     text-align: center;
     flex: 1;
+    float: left;
+    width: 50%;
     /* padding: 20px; */
 }
