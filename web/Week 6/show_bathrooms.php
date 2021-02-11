@@ -52,11 +52,11 @@ try
 	while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 	{
 		array_push($bathrooms_list, $row);
-		echo '<div>';
+		echo '<div id="'.$row['bathroomid'].'">';
 		echo '<p>'. $row['building'].'</p>';
 		echo '<p>'. $row['roomnumber'].'</p>';
 		echo '<p>'. $row['gender'].'</p>';
-		echo '<p>'. $row['description'].'</p>';
+		// echo '<p>'. $row['description'].'</p>';
 		echo '<p>'. $row['overallrating'].'</p>';
 
 		// echo 'Topics: ';
@@ -77,10 +77,7 @@ try
 
 		echo '</div>';
 	}
-foreach($bathrooms_list as $result) {
-    echo $result['building'], '<br>';
-}
-echo $bathrooms_list;
+
 
 }
 catch (PDOException $ex)
