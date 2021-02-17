@@ -81,7 +81,7 @@ catch (PDOException $ex)
 ?>
 <form action="./individual_bathroom.php" id="theForm" method = "POST">
 <label for="id">ID</label>
-<input type="text" id="id">
+<input type="text" id="id" name="id">
 </form>
 <script type="text/javascript">
     var the_array = <?php echo json_encode($bathrooms_list); ?>;
