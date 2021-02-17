@@ -27,11 +27,11 @@ $db = get_db();
 
 	while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 	{
-		echo '<p> '. $row['building']. ' ';
-		echo  $row['roomnumber']. ' ';
-		echo  $row['gender'].'</p>';
-		// echo '<p>'. $row['description'].'</p>';
-		echo '<p>'. $row['overallrating'].'</p>';
+		echo '<p>Building: '. $row['building']. '</p>';
+		echo '<p> Room Number: '.$row['roomnumber']. '</p>';
+		echo '<p> Gender: '.$row['gender'].'</p>';
+		echo '<p> Description: '. $row['description'].'</p>';
+		echo '<p> Rating: '. $row['overallrating'].' out of 5</p>';
         
 
 	}
