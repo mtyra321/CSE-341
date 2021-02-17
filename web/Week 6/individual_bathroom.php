@@ -24,15 +24,9 @@ $db = get_db();
 	$bathrooms_list = [];
 
 	// Go through each result
-	echo '
-	<div class = "flex-container">
-	';
-	$counter = 0;
+
 	while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 	{
-		array_push($bathrooms_list, $row);
-		echo '<div class="flex-item" id="'.$row['bathroomid'].'" onclick = "individual_bathroom('.$counter.')">';
-		
 		echo '<p> '. $row['building']. ' ';
 		echo  $row['roomnumber']. ' ';
 		echo  $row['gender'].'</p>';
@@ -56,7 +50,6 @@ $db = get_db();
 		// }
 
 		echo '</div>';
-		$counter++;
 	}
 echo '</div>';
 
