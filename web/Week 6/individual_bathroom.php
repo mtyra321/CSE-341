@@ -39,6 +39,6 @@ $db = get_db();
 
 
 ?>
-<button><a href="/.show_bathrooms.php">Back to List</a></button>
+<button><a href="./show_bathrooms.php">Back to List</a></button>
 </body>
 </html>
