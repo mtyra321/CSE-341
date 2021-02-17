@@ -85,6 +85,9 @@ catch (PDOException $ex)
 	function individual_bathroom(id) {
     var data = the_array[id];
     console.log(data);
+	window.location.replace("/.individual_bathroom.php");
+	//pass to individual page
+	//pass data through url
 }
 	</script>
 </div>
