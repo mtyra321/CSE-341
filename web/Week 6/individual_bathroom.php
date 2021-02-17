@@ -19,7 +19,7 @@ $db = get_db();
 	$id = $_POST["id"];
     echo 'id is ', $id;
     // prepare the statement
-	$statement = $db->prepare('SELECT BathroomID, RoomNumber, Gender, description, building, overallrating FROM bathroom');
+	$statement = $db->prepare('SELECT BathroomID, RoomNumber, Gender, description, building, overallrating FROM bathroom where bathroomid =',$id);
 	$statement->execute();
 	$bathrooms_list = [];
 
