@@ -1,12 +1,6 @@
 <?php
 include "../db/dbConnect.php";
 $db = get_db();
-session_start();
-
-if(isset($_SESSION["id"]))
-{
-    unset($_SESSION["id"]);
-}
 ?>
 <!DOCTYPE html>
 <html>
@@ -85,7 +79,7 @@ catch (PDOException $ex)
 }
 
 ?>
-<form action="./individual_bathroom.php">
+<form action="./individual_bathroom.php" id="theForm" method = "POST">
 <label for="id">ID</label>
 <input type="text" id="id">
 </form>
@@ -96,10 +90,8 @@ catch (PDOException $ex)
     var data = the_array[id];
 	document.getElementById("id").value = data.bathroomid;
     console.log(data);
+	document.getElementById("theForm").submit();
 
-	//window.location.replace("./individual_bathroom.php");
-	//pass to individual page
-	//pass data through url
 }
 	</script>
 </div>

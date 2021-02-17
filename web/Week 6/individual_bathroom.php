@@ -1,7 +1,6 @@
 <?php
 include "../db/dbConnect.php";
 $db = get_db();
-session_start();
 ?>
 
 
@@ -15,10 +14,10 @@ session_start();
 </head>
 <body>
     <h1>Individual bathroom</h1>
-    <input type="text" name = "id" id="id" readonly/>
 
 <?php
-	$id = 
+	$id = $_POST["id"];
+    echo 'id is ', $id;
     // prepare the statement
 	$statement = $db->prepare('SELECT BathroomID, RoomNumber, Gender, description, building, overallrating FROM bathroom where BathroomID = ');
 	$statement->execute();
