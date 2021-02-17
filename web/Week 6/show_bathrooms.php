@@ -91,9 +91,7 @@ catch (PDOException $ex)
 	function individual_bathroom(id) {
     var data = the_array[id];
     console.log(data);
-	<?php $_SESSION["id"] = data.bathroomID;
-echo $_SESSION["id"];
-	?>
+
 	//window.location.replace("./individual_bathroom.php");
 	//pass to individual page
 	//pass data through url
