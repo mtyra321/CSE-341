@@ -94,7 +94,7 @@ catch (PDOException $ex)
 	console.log(the_array);
 	function individual_bathroom(id) {
     var data = the_array[id];
-	document.getElementById("id").value = data.bathroomID;
+	document.getElementById("id").value = data.bathroomid;
     console.log(data);
 
 	//window.location.replace("./individual_bathroom.php");
