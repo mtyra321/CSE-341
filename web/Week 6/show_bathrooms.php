@@ -86,6 +86,7 @@ catch (PDOException $ex)
 
 ?>
 <form action="./individual_bathroom.php">
+<label for="id">ID</label>
 <input type="text" id="id">
 </form>
 <script type="text/javascript">
