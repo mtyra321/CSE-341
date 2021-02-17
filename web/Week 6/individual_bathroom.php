@@ -27,6 +27,7 @@ $db = get_db();
 
 	while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 	{
+        echo $row['bathroomid'];
         if($row['bathroomid'] == $id){
 		echo '<p> '. $row['building']. ' ';
 		echo  $row['roomnumber']. ' ';
