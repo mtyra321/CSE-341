@@ -1,6 +1,12 @@
 <?php
 include "../db/dbConnect.php";
 $db = get_db();
+session_start();
+
+if(isset($_SESSION["id"]))
+{
+    unset($_SESSION["id"]);
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -85,7 +91,10 @@ catch (PDOException $ex)
 	function individual_bathroom(id) {
     var data = the_array[id];
     console.log(data);
-	window.location.replace("./individual_bathroom.php");
+	<?php $_SESSION["id"] = data.bathroomID;
+echo $_SESSION["id"];
+	?>
+	//window.location.replace("./individual_bathroom.php");
 	//pass to individual page
 	//pass data through url
 }
