@@ -14,7 +14,6 @@ $db = get_db();
 </head>
 <body>
 <div id="whole_thing" style="text-align:center;">
-<h1>Bathroom Details</h1>
 
 <?php
 	$id = $_POST["id"];
