@@ -54,7 +54,7 @@ $db = get_db();
 	<br />
 	<input type="submit" value="Add to Database" />
 </form>
-<button><a href="./show_bathrooms.php">Back to List</a></button>
+<button onclick = "	window.location.href = './show_bathrooms.php'">Back to List</button>
 
 </div>
 
