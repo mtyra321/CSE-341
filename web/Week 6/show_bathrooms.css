@@ -21,8 +21,7 @@
 }
 
 #button_div {
-    align-self: center;
-    align-content: center;
+    text-align: center;
 }
 
 #add_bathroom {
