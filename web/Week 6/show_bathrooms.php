@@ -79,7 +79,7 @@ catch (PDOException $ex)
 	</script>
 </div>
 <div id="button_div">
-<button id = "add_bathroom"onclick = "window.location.href = './show_bathrooms.php'">Add a Bathroom</button>
+<button id = "add_bathroom"onclick = "window.location.href = './add_bathroom.php'">Add a Bathroom</button>
 </div>
 </body>
 </html>
