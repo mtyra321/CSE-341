@@ -35,13 +35,13 @@ $db = get_db();
 
 	}
 
-
+	//  $statement = $db->prepare('DELETE FROM bathroom Where BathroomID = '.$id);
+	// $statement->execute();
 
 ?>
-<button onclick = "	window.location.href = './show_bathrooms.php'">Back to List</button>
+<button onclick = "window.location.href = './show_bathrooms.php'">Back to List</button>
 <button onclick="
-	<?php $statement = $db->prepare('DELETE FROM bathroom Where BathroomID = '.$id);
-	$statement->execute();?>
+
 	window.location.href = './show_bathrooms.php'">Delete Bathroom</button>
 
 </script>
