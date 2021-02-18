@@ -16,8 +16,16 @@
     /* padding: 20px; */
 }
 
+h1 {
+    text-align: center;
+}
+
 .flex-item:hover {
     background-color: rgba(39, 105, 65, 0.75);
+}
+
+#site_description {
+    text-align: center;
 }
 
 #button_div {

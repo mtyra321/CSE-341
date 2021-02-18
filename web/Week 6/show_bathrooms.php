@@ -13,7 +13,7 @@ $db = get_db();
 <body>
 <div>
 <h1>Nature Calls Bathroom List</h1>
-
+<p id="site_description">This website shows a list of bathrooms on the BYUI campus. Each bathroom has a location, description, and a rating</p>
 <?php
 
 
