@@ -28,18 +28,18 @@ $db = get_db();
 <form id="mainForm" action="insert_bathroom.php" method="POST">
 
 	<label for="txtbuilding">Building</label>
-	<input type="text" id="txtbuilding" name="txtbuilding" ></input>
+	<input type="text" id="txtbuilding" name="txtbuilding" required></input>
 	<br /><br />
 
 	<label for="txtroom">Room Number</label>
-	<input type="text" id="txtroom" name="txtroom"></input>
+	<input type="text" id="txtroom" name="txtroom"required></input>
 	<br /><br />
 
 	<label for="txtgender">Gender</label>
-    <input type="text" id="txtgender" name="txtgender"></input>
+    <input type="text" id="txtgender" name="txtgender"required></input>
 	<br /><br />
 	<label for="txtdescription">Description</label>
-	<input type="text" id="txtdescription" name="txtdescription"></input>
+	<input type="text" id="txtdescription" name="txtdescription"required></input>
 	<br /><br />
     
     <label for="rating">Rating:		</label>
