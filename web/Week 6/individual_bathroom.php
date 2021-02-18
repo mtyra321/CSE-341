@@ -13,7 +13,8 @@ $db = get_db();
     <title>Single Bathroom</title>
 </head>
 <body>
-    <h1>Individual bathroom</h1>
+<div id="whole_thing" style="text-align:center;">
+<h1>Individual bathroom</h1>
 
 <?php
 	$id = $_POST["id"];
@@ -40,5 +41,6 @@ $db = get_db();
 
 ?>
 <button><a href="./show_bathrooms.php">Back to List</a></button>
+</div>
 </body>
 </html>
