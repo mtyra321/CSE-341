@@ -21,5 +21,7 @@
 }
 
 #add_bathroom {
+    align-items: center;
     width: 200px;
+    height: 80px;
 }
