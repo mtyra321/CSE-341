@@ -47,24 +47,8 @@ try
 		echo '<p> '. $row['building']. ' ';
 		echo  $row['roomnumber']. ' ';
 		echo  $row['gender'].'</p>';
-		// echo '<p>'. $row['description'].'</p>';
-		echo '<p>'. $row['overallrating'].'</p>';
+		echo '<p> Rating: '. $row['overallrating'].'/5</p>';
 
-		// echo 'Topics: ';
-
-		// get the topics now for this scripture
-		// $stmtTopics = $db->prepare('SELECT name FROM topic t'
-		// 	. ' INNER JOIN scripture_topic st ON st.topicId = t.id'
-		// 	. ' WHERE st.scriptureId = :scriptureId');
-
-		// $stmtTopics->bindValue(':scriptureId', $row['id']);
-		// $stmtTopics->execute();
-
-		// Go through each topic in the result
-		// while ($topicRow = $stmtTopics->fetch(PDO::FETCH_ASSOC))
-		// {
-		// 	echo $topicRow['name'] . ' ';
-		// }
 
 		echo '</div>';
 		$counter++;
