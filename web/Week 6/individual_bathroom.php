@@ -43,8 +43,8 @@ $db = get_db();
 <script type="text/javascript">
 function delete_bathroom(){
 console.log("deleting bathroom");
-$statement = $db->prepare('DELETE FROM bathroom Where BathroomID = '.$id);
-	$statement->execute();
+<?php $statement = $db->prepare('DELETE FROM bathroom Where BathroomID = '.$id);
+	$statement->execute();?>
 }
 </script>
 </div>
