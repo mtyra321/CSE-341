@@ -19,3 +19,7 @@
 .flex-item:hover {
     background-color: rgba(39, 105, 65, 0.75);
 }
+
+#add_bathroom {
+    width: 200px;
+}

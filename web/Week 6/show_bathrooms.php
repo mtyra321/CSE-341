@@ -64,7 +64,6 @@ catch (PDOException $ex)
 
 ?>
 <form action="./individual_bathroom.php" id="theForm" method = "POST">
-<label for="id">ID</label>
 <input type="text" id="id" name="id" style="visibility: hidden;">
 </form>
 <script type="text/javascript">
@@ -79,6 +78,6 @@ catch (PDOException $ex)
 }
 	</script>
 </div>
-<button ><a href = "./add_bathroom.php">Add a Bathroom</a></button>
+<button id = "add_bathroom"><a href = "./add_bathroom.php">Add a Bathroom</a></button>
 </body>
 </html>
