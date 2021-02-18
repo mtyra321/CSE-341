@@ -78,6 +78,8 @@ catch (PDOException $ex)
 }
 	</script>
 </div>
+<div id="button_div">
 <button id = "add_bathroom"><a href = "./add_bathroom.php">Add a Bathroom</a></button>
+</div>
 </body>
 </html>

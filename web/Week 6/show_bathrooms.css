@@ -20,9 +20,11 @@
     background-color: rgba(39, 105, 65, 0.75);
 }
 
+#button_div {
+    align-items: center;
+}
+
 #add_bathroom {
-    text-align: center;
-    align-self: center;
     align-items: center;
     width: 200px;
     height: 80px;
