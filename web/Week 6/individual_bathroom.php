@@ -38,14 +38,14 @@ $db = get_db();
 
 
 ?>
-<button onclick = "./show_bathrooms.php">Back to List</button>
+<button onclick = "	window.location.href = './show_bathrooms.php'">Back to List</button>
 <button onclick="delete_bathroom()">Delete Bathroom</button>
 <script type="text/javascript">
 function delete_bathroom(){
 console.log("deleting bathroom");
 <?php $statement = $db->prepare('DELETE FROM bathroom Where BathroomID = '.$id);
 	$statement->execute();?>
-	window.locatio.href = "./show_bathrooms.php"
+	window.location.href = "./show_bathrooms.php"
 }
 </script>
 </div>
