@@ -14,11 +14,10 @@ $db = get_db();
 </head>
 <body>
 <div id="whole_thing" style="text-align:center;">
-<h1>Individual bathroom</h1>
+<h1>Bathroom Details</h1>
 
 <?php
 	$id = $_POST["id"];
-    echo 'id is ', $id;
     // prepare the statement
 	$statement = $db->prepare('SELECT BathroomID, RoomNumber, Gender, description, building, overallrating FROM bathroom Where BathroomID = '.$id);
 	$statement->execute();
@@ -28,6 +27,7 @@ $db = get_db();
 
 	while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 	{
+		echo '<h1>Bathroom Details: '. $row['building'].' '.$row['roomnumber'].' '.$row['gender'].'</h1>';
 		echo '<p>Building: '. $row['building']. '</p>';
 		echo '<p> Room Number: '.$row['roomnumber']. '</p>';
 		echo '<p> Gender: '.$row['gender'].'</p>';
